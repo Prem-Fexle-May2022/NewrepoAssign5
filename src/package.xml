@@ -51,6 +51,12 @@
         <members>Student__c</members>
         <name>CustomTab</name>
     </types>
+	<types>
+        <members>Student__c-Registrar Layout</members>
+        <members>Student__c-Student Layout</members>
+        <members>Student__c-Teacher  Layout</members>
+        <name>Layout</name>
+    </types>
     <types>
         <members>Student__c.Registrar</members>
         <members>Student__c.Teacher</members>
