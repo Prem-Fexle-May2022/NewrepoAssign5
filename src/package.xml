@@ -6,6 +6,10 @@
         <members>StudentController</members>
         <members>StudentController1</members>
         <members>StudentQueryRecord</members>
+		<members>HelloWorldTestClass</members>
+        <members>LeftTrianglePattern</members>
+        <members>MyHelloWorld</members>
+        <members>NumberPattern</members>
         <name>ApexClass</name>
     </types>
     <types>
@@ -19,6 +23,7 @@
         <members>Subject__c</members>
         <members>Teacher__c</members>
         <members>Year_Of_Class__c</members>
+	    <members>Book__c</members>
         <name>CustomObject</name>
     </types>
 	<types>
@@ -71,6 +76,7 @@
         <members>Subject__c</members>
         <members>Teacher__c</members>
         <members>Year_Of_Class__c</members>
+		<members>Book__c</members>
         <name>CustomTab</name>
     </types>
 	 <types>
@@ -82,6 +88,10 @@
     <types>
         <members>*</members>
         <name>GlobalValueSet</name>
+    </types>
+	    <types>
+        <members>HelloWorldTrigger</members>
+        <name>ApexTrigger</name>
     </types>
     <types>
         <members>Student__c.Registrar</members>
