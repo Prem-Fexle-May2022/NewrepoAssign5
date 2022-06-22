@@ -10,6 +10,7 @@
         <members>LeftTrianglePattern</members>
         <members>MyHelloWorld</members>
         <members>NumberPattern</members>
+		<members>DownTrianglePattern1</members>
         <name>ApexClass</name>
     </types>
     <types>
