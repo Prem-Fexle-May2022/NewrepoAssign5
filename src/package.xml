@@ -11,6 +11,7 @@
         <members>MyHelloWorld</members>
         <members>NumberPattern</members>
 		<members>DownTrianglePattern1</members>
+		<members>Patterns</members>
         <name>ApexClass</name>
     </types>
     <types>
