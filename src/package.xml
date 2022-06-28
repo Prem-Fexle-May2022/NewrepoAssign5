@@ -12,6 +12,10 @@
         <members>NumberPattern</members>
 		<members>DownTrianglePattern1</members>
 		<members>Patterns</members>
+		<members>ListClass</members>
+		<members>SetClass</members>
+		<members>MapCollection</members>
+		<members>DataTypesMethodsClass</members>
         <name>ApexClass</name>
     </types>
     <types>
