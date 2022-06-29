@@ -16,6 +16,7 @@
 		<members>SetClass</members>
 		<members>MapCollection</members>
 		<members>DataTypesMethodsClass</members>
+		<members>OperatorPrecedenceApex</members>
         <name>ApexClass</name>
     </types>
     <types>
