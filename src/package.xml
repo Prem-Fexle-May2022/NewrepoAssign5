@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
-	<members>DreamWorld</members>
-	<members>HelloWorld1</members>
+	    <members>DreamWorld</members>
+	    <members>HelloWorld1</members>
+	    <members>Expression</members>
+        <members>OperatorPrecedenceApex</members>
         <members>StudentController</members>
         <members>StudentController1</members>
         <members>StudentQueryRecord</members>
@@ -19,8 +21,8 @@
         <name>ApexClass</name>
     </types>
     <types>
-	<members>Dream_World__c</members>
-	<members>HelloWorld__c</members>
+	    <members>Dream_World__c</members>
+	    <members>HelloWorld__c</members>
         <members>College__c</members>
         <members>Employee__c</members>
         <members>Pan_Card__c</members>
@@ -33,8 +35,8 @@
         <name>CustomObject</name>
     </types>
 	<types>
-	<members>Dream_World__c.Dream_World_Title__c</members>
-	<members>HelloWorld__c.HelloName__c</members>
+	    <members>Dream_World__c.Dream_World_Title__c</members>
+	    <members>HelloWorld__c.HelloName__c</members>
         <members>Student__c.Account_Number__c</members>
         <members>Student__c.Address__c</members>
         <members>Student__c.Bank_Name__c</members>
@@ -72,7 +74,7 @@
         <name>CustomField</name>
     </types>
     <types>
-	<members>Dream_World__c</members>
+	    <members>Dream_World__c</members>
         <members>HelloWorld__c</members>
         <members>College__c</members>
         <members>Employee__c</members>
