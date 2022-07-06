@@ -4,7 +4,7 @@ public with sharing class StaticPractice3 {
 
   public static  void staic_M1(){                    // create static method
 
-    StaticPractice1.Static_Method();                 // static method to calling other class static method call
+    StaticPractice1.static_Method();                 // static method to calling other class static method call
 
     StaticPractice1 obj = new StaticPractice1 ();           // static method to calling other class non static method  
     obj.non_StaticMethod1();   
@@ -12,7 +12,7 @@ public with sharing class StaticPractice3 {
 
   public void nonStaic_M1(){
 
-    StaticPractice1.Static_Method();                // nonstatic method to calling other class static method call
+    StaticPractice1.static_Method();                // nonstatic method to calling other class static method call
 
     StaticPractice1 obj = new StaticPractice1 ();           //static method to calling other class non static method  
     obj.non_StaticMethod1();                                // without create object not calling non static method
