@@ -18,6 +18,9 @@
 		<members>SetClass</members>
 		<members>MapCollection</members>
 		<members>DataTypesMethodsClass</members>
+		<members>StaticPractice1</members>
+		<members>StaticPractice2</members>
+		<members>StaticPractice3</members>
         <name>ApexClass</name>
     </types>
     <types>
