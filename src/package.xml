@@ -18,6 +18,14 @@
 		<members>SetClass</members>
 		<members>MapCollection</members>
 		<members>DataTypesMethodsClass</members>
+		<members>Constructor</members>
+		<members>Overloading</members>
+		<members>ControlFlowStatement</members>
+		<members>CallByValue</members>
+		<members>CallByRefrences</members>
+		<members>AccessModifier</members>
+		<members>SuperClass</members>
+		<members>ChildYellowMarker</members>
         <name>ApexClass</name>
     </types>
     <types>
