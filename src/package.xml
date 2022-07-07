@@ -18,6 +18,13 @@
 		<members>SetClass</members>
 		<members>MapCollection</members>
 		<members>DataTypesMethodsClass</members>
+		<members>SuperKeywordClass</members>
+		<members>Subclass</members>
+		<members>ThisKeywordClass</members>
+		<members>PurchaseOrder</members>
+		<members>CustomerPurchaseOrder</members>
+		<members>EmployeePurchaseOrder</members>
+		<members>ProcessPurchaseOrder</members>
         <name>ApexClass</name>
     </types>
     <types>
