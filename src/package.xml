@@ -26,6 +26,7 @@
         <members>ControlFlowStatement</members>
         <members>Overloading</members>
         <members>SuperClass</members>
+		<members>CountryMapCodeClass</members>
         <name>ApexClass</name>
     </types>
     <types>
