@@ -4,11 +4,13 @@
         <members>DreamWorld</members>
         <members>HelloWorld1</members>
         <members>Expression</members>
+		<members>CountryMapCode</members>
+		<members>DmlClass</members>
         <members>OperatorPrecedenceApex</members>
         <members>StudentController</members>
         <members>StudentController1</members>
         <members>StudentQueryRecord</members>
-		    <members>HelloWorldTestClass</members>
+		<members>HelloWorldTestClass</members>
         <members>LeftTrianglePattern</members>
         <members>MyHelloWorld</members>
         <members>NumberPattern</members>
@@ -36,8 +38,8 @@
         <name>ApexClass</name>
     </types>
     <types>
-	      <members>Dream_World__c</members>
-	      <members>HelloWorld__c</members>
+	    <members>Dream_World__c</members>
+	    <members>HelloWorld__c</members>
         <members>College__c</members>
         <members>Employee__c</members>
         <members>Pan_Card__c</members>
@@ -50,8 +52,8 @@
         <name>CustomObject</name>
     </types>
 	<types>
-	    <members>Dream_World__c.Dream_World_Title__c</members>
-	    <members>HelloWorld__c.HelloName__c</members>
+	  <members>Dream_World__c.Dream_World_Title__c</members>
+	  <members>HelloWorld__c.HelloName__c</members>
       <members>Student__c.Account_Number__c</members>
       <members>Student__c.Address__c</members>
       <members>Student__c.Bank_Name__c</members>
@@ -89,7 +91,7 @@
       <name>CustomField</name>
     </types>
     <types>
-	      <members>Dream_World__c</members>
+	    <members>Dream_World__c</members>
         <members>HelloWorld__c</members>
         <members>College__c</members>
         <members>Employee__c</members>
@@ -99,7 +101,7 @@
         <members>Subject__c</members>
         <members>Teacher__c</members>
         <members>Year_Of_Class__c</members>
-	    	<members>Book__c</members>
+	    <members>Book__c</members>
         <name>CustomTab</name>
     </types>
 	 <types>
