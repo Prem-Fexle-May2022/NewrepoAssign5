@@ -111,17 +111,13 @@ public class CountryMapPractice2 {
       * Params        :    String
       * Return        :    Void
       **/
-    public static void country_CodeMethod(String Code){
-        for( String countryCode : countryContainingData.keySet()){
-            if(countryCode==Code){
+  public static void country_CodeMethod(String Code){
+        if(countryContainingData.containsKey(Code)){
                 System.debug('This map contains given country Code');
-                break;
-            }
-            else{
-                System.debug('This map not contains given country Code');
-                break;
-            }                 
         }
+        else{
+                System.debug('This map not contains given country Code');
+        }                 
     }
     
     /**
@@ -131,16 +127,17 @@ public class CountryMapPractice2 {
       * Return        :    Void
       **/
     public static void countryName_Method(String countryName){
-        for(Map<String,Map<String,List<String>>> countryWithStateDistrict :countryContainingData.values()){
-            System.debug(countryWithStateDistrict);
-            if(countryWithStateDistrict.containsKey(countryName)){
-                System.debug('This map contains given country Name');
-                break;
-            }
-            else{
-                System.debug('This map not contains given country Name');
-                break;
-            }
+        Set<String> onlyCountryNameSet = new Set<String>();
+        for(String countryCode :countryContainingData.keySet()){
+            Map<String,Map<String,List<String>>> countryStateDsitrict = countryContainingData.get(countryCode);
+            onlyCountryNameSet.addAll(countryStateDsitrict.keySet());
+            // System.debug(onlyCountryNameSet); print All Country name
+        }
+        if(onlyCountryNameSet.contains(countryName)){
+             System.debug('This map contains given country Name'); 
+        }
+        else{
+            System.debug('This map not contains given country Name'); 
         }
     }
 }
