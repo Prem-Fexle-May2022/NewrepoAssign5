@@ -104,8 +104,8 @@
 	    <members>Book__c</members>
         <name>CustomTab</name>
     </types>
-	 <types>
-        <members>Student__c-Registrar Layout</members>
+	<types>
+		<members>Student__c-Registrar Layout</members>
         <members>Student__c-Student Layout</members>
         <members>Student__c-Teacher  Layout</members>
         <name>Layout</name>
@@ -114,7 +114,7 @@
         <members>*</members>
         <name>GlobalValueSet</name>
     </types>
-	    <types>
+	<types>
         <members>HelloWorldTrigger</members>
         <name>ApexTrigger</name>
     </types>
