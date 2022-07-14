@@ -33,6 +33,8 @@
         <members>ControlFlowStatement</members>
         <members>Overloading</members>
         <members>SuperClass</members>
+		<members>CountryMapPractice2</members>
+        <members>DmlClass</members>
         <name>ApexClass</name>
     </types>
     <types>
