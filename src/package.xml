@@ -8,6 +8,7 @@
         <members>StudentController</members>
         <members>StudentController1</members>
         <members>StudentQueryRecord</members>
+        <members>HelloWorldTestClass</members>
 		    <members>HelloWorldTestClass</members>
         <members>LeftTrianglePattern</members>
         <members>MyHelloWorld</members>
@@ -18,6 +19,9 @@
         <members>SetClass</members>
         <members>MapCollection</members>
         <members>DataTypesMethodsClass</members>
+        <members>StaticPractice1</members>
+        <members>StaticPractice2</members>
+        <members>StaticPractice3</members>
         <members>SuperKeywordClass</members>
         <members>Subclass</members>
         <members>ThisKeywordClass</members>
@@ -36,6 +40,8 @@
         <name>ApexClass</name>
     </types>
     <types>
+        <members>Dream_World__c</members>
+        <members>HelloWorld__c</members>
 	      <members>Dream_World__c</members>
 	      <members>HelloWorld__c</members>
         <members>College__c</members>
@@ -50,6 +56,43 @@
         <name>CustomObject</name>
     </types>
 	<types>
+        <members>Dream_World__c.Dream_World_Title__c</members>
+        <members>HelloWorld__c.HelloName__c</members>
+        <members>Student__c.Account_Number__c</members>
+        <members>Student__c.Address__c</members>
+        <members>Student__c.Bank_Name__c</members>
+        <members>Student__c.Bank_Phone_Number__c</members>
+        <members>Student__c.City__c</members>
+        <members>Student__c.Class__c</members>
+        <members>Student__c.Current_Year__c</members>
+        <members>Student__c.Donation_Amount__c</members>
+        <members>Student__c.Email_Id__c</members>
+        <members>Student__c.Exam_Fees_Submitted__c</members>
+        <members>Student__c.Father_Mobile_Number__c</members>
+        <members>Student__c.Father_Name__c</members>
+        <members>Student__c.Fees_Submitted__c</members>
+        <members>Student__c.Grade__c</members>
+        <members>Student__c.Home_Phone__c</members>
+        <members>Student__c.IFSC_Code__c</members>
+        <members>Student__c.Is_Donation__c</members>
+        <members>Student__c.Pending_Exam_Fees__c</members>
+        <members>Student__c.Pending_Fees_Amount__c</members>
+        <members>Student__c.Pending_Overall_Amount__c</members>
+        <members>Student__c.Roll_Number__c</members>
+        <members>Student__c.Section__c</members>
+        <members>Student__c.State__c</members>
+        <members>Student__c.Stream__c</members>
+        <members>Student__c.Student_Mobile_Number__c</members>
+        <members>Student__c.X1st_Sem_Back__c</members>
+        <members>Student__c.X1st_Sem_Subject_in_which_back__c</members>
+        <members>Student__c.X1st_sem_Percentage__c</members>
+        <members>Student__c.X2nd_Sem_Percentage__c</members>
+        <members>Student__c.X3rd_Sem_Back__c</members>
+        <members>Student__c.X3rd_Sem_Subject_in_which_back__c</members>
+        <members>Student__c.X4th_Sem_Back__c</members>
+        <members>Student__c.X4th_Sem_Subject_in_which_back__c</members>
+        <members>Student__c.X4th_sem_Percentage__c</members>
+        <name>CustomField</name>
 	    <members>Dream_World__c.Dream_World_Title__c</members>
 	    <members>HelloWorld__c.HelloName__c</members>
       <members>Student__c.Account_Number__c</members>
