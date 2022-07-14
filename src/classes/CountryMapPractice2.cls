@@ -51,6 +51,8 @@ public class CountryMapPractice2 {
                 }
             }
         }
+        System.debug(mapOfStateWithDistrict);
+        System.debug(countryNamesStartingWithS);
         if(mapOfStateWithDistrict.isEmpty())
             System.debug('This combination is not present in this map');
         else{
