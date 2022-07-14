@@ -14,7 +14,7 @@ public with sharing class DmlClass {
       **/
     public void dml_sObjectMethod(){
 
-        sObject s = new Account();
+        SObject s = new Account();
         if(s instanceOf Account){
              Account a  = (Account)s;
             a.name = 'Om Prakash';

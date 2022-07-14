@@ -13,7 +13,7 @@ public class CountryMapPractice2 {
        * Params        :    void
        * Return        :    Void
        **/
-    public static void show_Name(){
+    public static void fillCountryMap(){
          countryContainingData.put('+91',new Map<String,Map<String,List<String>>>{'India'=> new Map<String,List<String>>{
                                                                                 'Rajasthan'=> new List<String>{'Jaipur','Kota','Ajmer','Sikar'},
                                                                                  'UP'=> new List<String>{'Mathura','Kanpur'},
@@ -60,7 +60,7 @@ public class CountryMapPractice2 {
                 }
             }
             System.debug(mapOfStateWithDistrict);
-            for(String State : mapOfStateWithDistrict.keySet()){
+            for(String state : mapOfStateWithDistrict.keySet()){
                 if(state.startsWith(charToFormCombinationsWith.toUpperCase())){
                     for(String dist : mapOfStateWithDistrict.get(state)){
                         if(dist.startsWith(charToFormCombinationsWith.toUpperCase())){
@@ -111,13 +111,14 @@ public class CountryMapPractice2 {
       * Params        :    String
       * Return        :    Void
       **/
-  public static void country_CodeMethod(String Code){
+    public static void country_CodeMethod(String Code){
         if(countryContainingData.containsKey(Code)){
                 System.debug('This map contains given country Code');
         }
         else{
                 System.debug('This map not contains given country Code');
         }                 
+        
     }
     
     /**
