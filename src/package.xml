@@ -7,9 +7,9 @@
         <members>StudentController</members>
         <members>StudentController1</members>
         <members>StudentQueryRecord</members>
-	<members>HelloWorldTestClass</members
+	    <members>HelloWorldTestClass</members
         <members>HelloWorldTestClass</members>
-	<members>HelloWorldTestClass</members>
+	    <members>HelloWorldTestClass</members>
         <members>LeftTrianglePattern</members>
         <members>MyHelloWorld</members>
         <members>NumberPattern</members>
@@ -37,10 +37,11 @@
         <members>ControlFlowStatement</members>
         <members>Overloading</members>
         <members>SuperClass</members>
-	<members>CountryMapPractice2</members>
+	    <members>CountryMapPractice2</members>
         <members>DmlClass</members>
-	<members>SoqlQueryClass</members>
-	<members>DmlClass1</members>
+		<members>SoqlQueryClass</members>
+		<members>DmlClass1</members>
+		<members>ExceptionHandling</members>
         <name>ApexClass</name>
     </types>
     <types>
@@ -48,8 +49,8 @@
         <members>HelloWorld__c</members>
         <members>Dream_World__c</members>
         <members>HelloWorld__c</members>
-	<members>Dream_World__c</members>
-	<members>HelloWorld__c</members>
+		<members>Dream_World__c</members>
+		<members>HelloWorld__c</members>
         <members>College__c</members>
         <members>Employee__c</members>
         <members>Pan_Card__c</members>
@@ -58,14 +59,14 @@
         <members>Subject__c</members>
         <members>Teacher__c</members>
         <members>Year_Of_Class__c</members>
-	<members>Book__c</members>
+		<members>Book__c</members>
         <name>CustomObject</name>
     </types>
     <types>
-	<members>Dream_World__c.Dream_World_Title__c</members>
-	<members>HelloWorld__c.HelloName__c</members>
-	<members>Student__c.Account_Number__c</members>
-	<members>Student__c.Address__c</members>
+		<members>Dream_World__c.Dream_World_Title__c</members>
+		<members>HelloWorld__c.HelloName__c</members>
+		<members>Student__c.Account_Number__c</members>
+		<members>Student__c.Address__c</members>
 	<members>Student__c.Bank_Name__c</members>
 	<members>Student__c.Bank_Phone_Number__c</members>
 	<members>Student__c.City__c</members>
