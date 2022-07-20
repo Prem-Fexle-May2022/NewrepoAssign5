@@ -15,14 +15,14 @@ public with sharing class ExternalIdClass {
     public static void insertParentChild(){
         Date dt = Date.today();
         dt = dt.addDays(7);
-        Opportunity newOpportunity = new Opportunity(Name = 'OpportunityWithAccountInsert', StageName = 'Prospecting', CloseDate = dt);
+        Opportunity newOpportunity = new Opportunity(Name = 'OpportunityWithAccountInsert2', StageName = 'Prospecting', CloseDate = dt);
             
         // Parent refernce Used only for Forgien key reference and doesn't contains any other fields.
         Account acc = new Account(MyExtID__c = 'SPA111111');
         newOpportunity.Account = acc;
 
        // create the account object to insert and Same as above but has name field and used for the insert.
-       Account parentAccount = new Account(Name = 'Prem',MyExtID__c = 'SPA111111');
+       Account parentAccount = new Account(Name = 'Prem2',MyExtID__c = 'SPA111111');
         
        // Create the Account and the opportunity
        Database.SaveResult[] results = Database.insert(new SObject[]{parentAccount, newOpportunity});
@@ -30,7 +30,8 @@ public with sharing class ExternalIdClass {
        // Check result
        for(Integer i = 0; i<results.size(); i++){
             if(results[i].isSuccess()){
-                System.debug('successfully created ID '+ results[i].getId());
+                System.debug('successfully created ID '+ results[i].getId());  // output--> successfully created ID 0015i00000Kj63bAAB
+                                                                               // output-->  successfully created ID 0065i000005m6cRAAQ
             }
             else{
                 System.debug('Error : Could not Create sObject '+'for array element '+i +'.');

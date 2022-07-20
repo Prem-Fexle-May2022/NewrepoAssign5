@@ -12,35 +12,27 @@ public with sharing class ExceptionHandling {
      * Params        :    Integer
      * Return        :    Void
      **/
-    public static void  basic_ExceptionMethod(Integer i)
-    {
-        try
-        {
-            if(i==0)
-            {
+    public static void  basic_ExceptionMethod(Integer i){
+        try{
+            if(i==0){
                 Integer a;
                 Integer b = a*5;      // Throws Null PointerException
             }
-            else
-            {
+            else{
                 Account acc = new Account();
                 insert acc;       // Throws DMLException
             }
         }
-        catch(NullPointerException npe)
-        {
+        catch(NullPointerException npe){
             System.debug('I execute when there is NullPointerException occur is the try block');
         }
-        catch(DMLException d)
-        {
+        catch(DMLException d){
             System.debug('I execute when there is DMLException occur in the try block');
         }
-        catch(Exception e)
-        {
+        catch(Exception e){
             System.debug('I execute when there is any other exception except DMLException occurs in the try block');
         }
-        finally
-        {
+        finally{
             System.debug('No Matter whether an exception in the try block occured or not I always Excecute');
         }
     }
@@ -51,32 +43,26 @@ public with sharing class ExceptionHandling {
      * Params        :    void
      * Return        :    Void
     **/
-    public static void dmlException_Method()
-    {
+    public static void dmlException_Method(){
         /*********************** System Exception ************************************/   
         //  ******** 1.) DML Exception
-        try
-        {
+        try{
             Account a = new Account();
             insert a;
         } 
-        catch(DMLException de)
-        {
-            System.debug('Record can not be inserted '+ de.getMessage());
+        catch(DMLException de){
+            System.debug('Record can not be inserted '+ de.getMessage()); // output--> Record can not be inserted Insert failed. First exception on row 0; first error: REQUIRED_FIELD_MISSING, Required fields are missing: [Name]: [Name]
         }   
     }
 
-    
     /**
      * Created By    :    Prem Chand
      * Purpose       :    This method is ListException Method
      * Params        :    void
      * Return        :    Void
     **/
-    public static void listException_Method()
-    {
-        try
-        {
+    public static void listException_Method(){
+        try{
             List<String> stList = new List<String>{'Kumar Satyam','Prem','Vishal','Shailendra'};
             System.debug(stList.get(0));     // 'Kumar Satyam'
             System.debug(stList.get(1));     // 'Prem'
@@ -84,67 +70,55 @@ public with sharing class ExceptionHandling {
             System.debug(stList.get(3));     // 'Shailendra'
             System.debug(stList.get(4));     // Will throw a ListException as there is no element on index 4
         }
-        catch(ListException le)
-        {
-            System.debug('There is no value on Index: '+le.getMessage());
+        catch(ListException le){
+            System.debug('There is no value on Index: '+le.getMessage());  // output--> There is no value on Index: List index out of bounds: 4
         }
     }
 
-    
     /**
      * Created By    :    Prem Chand
      * Purpose       :    This method is NullPointerException
      * Params        :    void
      * Return        :    Void
     **/
-    public static void nullPointerException_Method()
-    {
-        try
-        {
+    public static void nullPointerException_Method(){
+        try{
             Account acc;
             acc.Name = 'Sunil';       // Throw nullPointerException as acc does not refer to any object
 
             List<Integer> listInteger;
             listInteger.add(100);      // Thro nullPointerException as listInteger does not refer to any object
         }
-        catch(NullpointerException npe)
-        {
-            System.debug('There is no object in the refernce variable: '+ npe.getMessage());
+        catch(NullpointerException npe){
+            System.debug('There is no object in the refernce variable: '+ npe.getMessage());  // output--> There is no object in the refernce variable: Attempt to de-reference a null object
         }
     }
 
-    
     /**
      * Created By    :    Prem Chand
      * Purpose       :    This method is QueryException Method
      * Params        :    void
      * Return        :    Void
     **/
-    public static void queryException_Method()
-    {
-        try
-        {
+    public static void queryException_Method(){
+        try{
             Account a = [SELECT Name FROM Account WHERE Name = 'Prem'];     // This Query will return more than one and will throw a QueryException
             
             Account b = [SELECT Name FROM Account WHERE Name = 'Any Company'];   // This will return no Record and will throw a QueryException
         }
-        catch(QueryException qe)
-        {
-            System.debug('There is a Problem With this a Query:: '+ qe.getMessage());
+        catch(QueryException qe){
+            System.debug('There is a Problem With this a Query:: '+ qe.getMessage());  // output--> There is a Problem With this a Query:: List has no rows for assignment to SObject
         }
     }
 
-    
     /**
      * Created By    :    Prem Chand
      * Purpose       :    This method is sObjectException 
      * Params        :    void
      * Return        :    Void
     **/
-    public static void sObjectException_Method()
-    {
-        try
-        {
+    public static void sObjectException_Method(){
+        try{
             List<Account> accList = [SELECT Name FROM Account];
             for(Account acc : accList)
             {
@@ -152,9 +126,8 @@ public with sharing class ExceptionHandling {
                                                       // Hence will throw an sObjectException
             }
         }
-        catch(sObjectException soe)
-        {
-            System.debug('There is a Problem with this a Query:: '+ soe.getMessage());    
+        catch(sObjectException soe){
+            System.debug('There is a Problem with this a Query:: '+ soe.getMessage()); // output--> There is a Problem with this a Query:: SObject row was retrieved via SOQL without querying the requested field: Account.NumberOfEmployees  
         }  
     }
 }
