@@ -5,12 +5,12 @@
  **/
 public with sharing class DmlClass1 {
 
-     /**
+    /**
       * Created By    :    Prem Chand
       * Purpose       :    This method is Insert Statement
       * Argument      :    void
       * Return        :    Void
-      **/
+     **/
     public void insert_Method(){
         Account[] accts = new List<Account>();
         for(Integer i=0;i<2;i++) {
@@ -23,7 +23,7 @@ public with sharing class DmlClass1 {
 
     /**
       * Created By    :    Prem Chand
-      * Purpose       :    This method is Insert Statement
+      * Purpose       :    This method is Update Statement
       * Argument      :    void
       * Return        :    Void
       **/
@@ -39,7 +39,7 @@ public with sharing class DmlClass1 {
 
     /**
      * Created By    :    Prem Chand
-     * Purpose       :    This method is Insert Statement
+     * Purpose       :    This method is Upser Statement
      * Argument      :    void
      * Return        :    Void
     **/
