@@ -6,8 +6,8 @@
  **/
 public  with sharing class CountryMapDynamicFill {
     
-    public static Map<String,Map<String,List<String>>> mapofCombinationCountryStateAndDistrict = new Map<String,Map<String,List<String>>>();
-    public Static Map<String,Map<String,List<String>>> showAllCountryStateAndDistrict= new Map<String,Map<String,List<String>>>();
+    public static Map<String,Map<String,List<String>>> mapOfCombinationCountryStateAndDistrict = new Map<String,Map<String,List<String>>>();
+    public Static Map<String,Map<String,List<String>>> mapOfAllCountryStateAndDistrict= new Map<String,Map<String,List<String>>>();
     
     public static List<AggregateResult> listOfAggResultForStates = new List<AggregateResult>();
 
@@ -16,7 +16,7 @@ public  with sharing class CountryMapDynamicFill {
      * Purpose       :    This method is Constructor
      * Params        :    String
      * Return        :    Void
-     **/
+    **/
     public CountryMapDynamicFill(String startingFirstChar){
         
         List<State__c> listofCombinationCountryData = [SELECT Name,(SELECT Name FROM Districts__r WHERE Name LIKE :startingFirstChar+'%'),
@@ -25,17 +25,17 @@ public  with sharing class CountryMapDynamicFill {
         for(State__c stateList :listofCombinationCountryData)
         {	
             for(District__c district : stateList.Districts__r){
-                if(mapofCombinationCountryStateAndDistrict.containsKey(stateList.Country__r.Name)){
-                    if(mapofCombinationCountryStateAndDistrict.get(stateList.Country__r.Name).containsKey(stateList.Name))
-                    mapofCombinationCountryStateAndDistrict.get(stateList.Country__r.Name).get(stateList.Name).add(district.Name);
+                if(mapOfCombinationCountryStateAndDistrict.containsKey(stateList.Country__r.Name)){
+                    if(mapOfCombinationCountryStateAndDistrict.get(stateList.Country__r.Name).containsKey(stateList.Name))
+                    mapOfCombinationCountryStateAndDistrict.get(stateList.Country__r.Name).get(stateList.Name).add(district.Name);
                 	else
-                    mapofCombinationCountryStateAndDistrict.get(stateList.Country__r.Name).put(stateList.Name, new List<String>{district.Name});
+                    mapOfCombinationCountryStateAndDistrict.get(stateList.Country__r.Name).put(stateList.Name, new List<String>{district.Name});
                 }
                 else
-                mapofCombinationCountryStateAndDistrict.put(stateList.Country__r.Name, new Map<String,List<String>>{stateList.Name => new List<String>{district.Name}});
+                mapOfCombinationCountryStateAndDistrict.put(stateList.Country__r.Name, new Map<String,List<String>>{stateList.Name => new List<String>{district.Name}});
             }
         }
-		System.debug('Map of Combination after querying data: => ' + mapofCombinationCountryStateAndDistrict);   
+		System.debug('Map of Combination after querying data: => ' + mapOfCombinationCountryStateAndDistrict);   
     }
 
     /**
@@ -48,20 +48,20 @@ public  with sharing class CountryMapDynamicFill {
         List<State__c> lsitofDistrictStateAndCountry = [SELECT Name,(SELECT Name FROM Districts__r),Country__r.Name FROM State__c];
             for(State__c st : lsitofDistrictStateAndCountry){
                 for(District__c district : st.Districts__r ){
-                    if(showAllCountryStateAndDistrict.containsKey(st.Country__r.Name)){
-                        if(showAllCountryStateAndDistrict.get(st.Country__r.Name).containsKey(st.Name)){
-                            showAllCountryStateAndDistrict.get(st.Country__r.Name).get(st.Name).add(district.Name);
+                    if(mapOfAllCountryStateAndDistrict.containsKey(st.Country__r.Name)){
+                        if(mapOfAllCountryStateAndDistrict.get(st.Country__r.Name).containsKey(st.Name)){
+                            mapOfAllCountryStateAndDistrict.get(st.Country__r.Name).get(st.Name).add(district.Name);
                         }
                         else{
-                            showAllCountryStateAndDistrict.get(st.Country__r.Name).put(st.Name,new List<String>{district.Name});
+                            mapOfAllCountryStateAndDistrict.get(st.Country__r.Name).put(st.Name,new List<String>{district.Name});
                         }
                     }
                     else{
-                        showAllCountryStateAndDistrict.put(st.Country__r.Name, New Map<String,List<String>>{st.Name => new List<String>{district.Name}});
+                        mapOfAllCountryStateAndDistrict.put(st.Country__r.Name, New Map<String,List<String>>{st.Name => new List<String>{district.Name}});
                     }
                 }
             }
-        System.debug('Map Of Show All Country  State And District => '+showAllCountryStateAndDistrict);
+        System.debug('Map Of Show All Country  State And District => '+mapOfAllCountryStateAndDistrict);
     }
 
     /**
@@ -69,11 +69,11 @@ public  with sharing class CountryMapDynamicFill {
       * Purpose       :    This method is used to show District Name whose length is Greater or Equal to passing integer vlue as a argument.
       * Params        :    String
       * Return        :    Void
-      **/
-    public void lenghtMethod(Integer len){
+    **/
+    public void lenghtDistrict(Integer len){
         Map<String,List<String>> mapOfStateWithDistrict = new Map<String,List<String>>();
         List<String> districtList = new List<String>();
-        for( Map<String,List<String>> tampMapStateDistrict : showAllCountryStateAndDistrict.values()){
+        for( Map<String,List<String>> tampMapStateDistrict : mapOfAllCountryStateAndDistrict.values()){
             for(List<String> tempDistrictList :tampMapStateDistrict.values()){
                 for(String distric :tempDistrictList){
                     if(distric.length() >= len){
@@ -144,7 +144,7 @@ public  with sharing class CountryMapDynamicFill {
     **/
     public class States{
         public string stateName{get; set;}
-        public List<Districts> districts{get; set;}
+        public List<Districts> districtsList{get; set;}
     }
     
     public class Districts{
@@ -153,7 +153,7 @@ public  with sharing class CountryMapDynamicFill {
     
     public class Country{
         public string countryName{get; set;}
-        public List<States> states{get; set;}
+        public List<States> statesList{get; set;}
         public Integer totalDistrictsOnCountry{get; set;}
         public Integer totalStatesOnCountry{get; set;}
     }
@@ -168,25 +168,25 @@ public  with sharing class CountryMapDynamicFill {
       
         Country objCountry = new Country();          // Create Country Class Object
         objCountry.countryName = countryName;
-        objCountry.states = new List<States>();         // Create State List
+        objCountry.statesList = new List<States>();         // Create State List
 
         List<AggregateResult> listOfAggResultOfStateForCountry = [SELECT COUNT(Id)TotalState FROM State__c WHERE Country__r.Name = :countryName GROUP BY Country__r.Name];
         objCountry.totalStatesOnCountry = (Integer)listOfAggResultOfStateForCountry[0].get('TotalState');
         
         List<AggregateResult> listOfAggResultOfDistrictForCountry = [SELECT COUNT(Id)TotalDistrict FROM District__c WHERE State__r.Country__r.Name = :countryName GROUP BY State__r.Country__r.Name];
         objCountry.totalDistrictsOnCountry = (Integer)listOfAggResultOfDistrictForCountry[0].get('TotalDistrict');
-        for(String state : showAllCountryStateAndDistrict.get(countryName).keySet()){
+        for(String state : mapOfAllCountryStateAndDistrict.get(countryName).keySet()){
             States stateObj = new States();
             stateObj.stateName = state;
-            stateObj.districts = new List<Districts>();
+            stateObj.districtsList = new List<Districts>();
             
-            for(String district : showAllCountryStateAndDistrict.get(countryName).get(state)){
+            for(String district : mapOfAllCountryStateAndDistrict.get(countryName).get(state)){
                 Districts districtObj = new Districts();
                 districtObj.districtName = district;
-				stateObj.districts.add(districtObj);
+				stateObj.districtsList.add(districtObj);
 			}
             
-            objCountry.states.add(stateObj);
+            objCountry.statesList.add(stateObj);
         }
         
         String jsonData = JSON.serialize(objCountry);

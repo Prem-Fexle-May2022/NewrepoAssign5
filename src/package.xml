@@ -7,7 +7,7 @@
         <members>StudentController</members>
         <members>StudentController1</members>
         <members>StudentQueryRecord</members>
-        <members>HelloWorldTestClass</members
+        <members>HelloWorldTestClass</members>
         <members>HelloWorldTestClass</members>
         <members>HelloWorldTestClass</members>
         <members>LeftTrianglePattern</members>
@@ -39,6 +39,8 @@
         <members>SuperClass</members>
         <members>CountryMapPractice2</members>
         <members>DmlClass</members>
+		<members>CountryMapDynamicFill</members>
+        <members>RelationshipSoqlClass</members>
 		<name>ApexClass</name>
     </types>
     <types>
