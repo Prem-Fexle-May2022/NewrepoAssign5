@@ -8,8 +8,6 @@
 		<members>StudentController1</members>
 		<members>StudentQueryRecord</members>
 		<members>HelloWorldTestClass</members>
-		<members>HelloWorldTestClass</members>
-		<members>HelloWorldTestClass</members>
 		<members>LeftTrianglePattern</members>
 		<members>MyHelloWorld</members>
 		<members>NumberPattern</members>
@@ -41,13 +39,9 @@
 		<members>DmlClass</members>
 		<members>CountryMapDynamicFill</members>
 		<members>RelationshipSoqlClass</members>
-        <name>ApexClass</name>
+      		<name>ApexClass</name>
     </types>
     <types>
-		<members>Dream_World__c</members>
-		<members>HelloWorld__c</members>
-		<members>Dream_World__c</members>
-		<members>HelloWorld__c</members>
 		<members>Dream_World__c</members>
 		<members>HelloWorld__c</members>
 		<members>College__c</members>
