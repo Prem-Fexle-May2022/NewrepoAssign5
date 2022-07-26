@@ -94,6 +94,7 @@
 		<members>Student__c.X4th_Sem_Back__c</members>
 		<members>Student__c.X4th_Sem_Subject_in_which_back__c</members>
 		<members>Student__c.X4th_sem_Percentage__c</members>
+		<members>Account.MyExtID__c</members>
 		<name>CustomField</name>
     </types>
     <types>
