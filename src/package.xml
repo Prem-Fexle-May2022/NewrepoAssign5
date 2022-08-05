@@ -2,60 +2,62 @@
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
 		<members>HelloWorld1</members>
-        <members>Expression</members>
-        <members>OperatorPrecedenceApex</members>
-        <members>StudentController</members>
-        <members>StudentController1</members>
-        <members>StudentQueryRecord</members>
-        <members>HelloWorldTestClass</members>
-        <members>LeftTrianglePattern</members>
-        <members>MyHelloWorld</members>
-        <members>NumberPattern</members>
-        <members>DownTrianglePattern1</members>
-        <members>Patterns</members>
-        <members>ListClass</members>
-        <members>SetClass</members>
-        <members>MapCollection</members>
-        <members>DataTypesMethodsClass</members>
-        <members>StaticPractice1</members>
-        <members>StaticPractice2</members>
-        <members>StaticPractice3</members>
-        <members>SuperKeywordClass</members>
-        <members>Subclass</members>
-        <members>ThisKeywordClass</members>
-        <members>PurchaseOrder</members>
-        <members>CustomerPurchaseOrder</members>
-        <members>EmployeePurchaseOrder</members>
-        <members>ProcessPurchaseOrder</members>
-        <members>AccessModifier</members>
-        <members>CallByRefrences</members>
-        <members>CallByValue</members>
-        <members>ChildYellowMarker</members>
-        <members>Constructor</members>
-        <members>ControlFlowStatement</members>
-        <members>Overloading</members>
-        <members>SuperClass</members>
-        <members>CountryMapPractice2</members>
-        <members>DmlClass</members>
-        <members>SoqlQueryClass</members>
-        <members>DmlClass1</members>
-        <members>ExceptionHandling</members>
-        <members>ExternalIdClass</members>
+		<members>Expression</members>
+		<members>OperatorPrecedenceApex</members>
+		<members>StudentController</members>
+		<members>StudentController1</members>
+		<members>StudentQueryRecord</members>
+		<members>HelloWorldTestClass</members>
+		<members>LeftTrianglePattern</members>
+		<members>MyHelloWorld</members>
+		<members>NumberPattern</members>
+		<members>DownTrianglePattern1</members>
+		<members>Patterns</members>
+		<members>ListClass</members>
+		<members>SetClass</members>
+		<members>MapCollection</members>
+		<members>DataTypesMethodsClass</members>
+		<members>StaticPractice1</members>
+		<members>StaticPractice2</members>
+		<members>StaticPractice3</members>
+		<members>SuperKeywordClass</members>
+		<members>Subclass</members>
+		<members>ThisKeywordClass</members>
+		<members>PurchaseOrder</members>
+		<members>CustomerPurchaseOrder</members>
+		<members>EmployeePurchaseOrder</members>
+		<members>ProcessPurchaseOrder</members>
+		<members>AccessModifier</members>
+		<members>CallByRefrences</members>
+		<members>CallByValue</members>
+		<members>ChildYellowMarker</members>
+		<members>Constructor</members>
+		<members>ControlFlowStatement</members>
+		<members>Overloading</members>
+		<members>SuperClass</members>
+		<members>CountryMapPractice2</members>
+		<members>DmlClass</members>
+		<members>SoqlQueryClass</members>
+		<members>DmlClass1</members>
+		<members>ExceptionHandling</members>
+		<members>ExternalIdClass</members>
+		<members>BankTriggerHelper</members>
         <name>ApexClass</name>
     </types>
     <types>
 		<members>Dream_World__c</members>
 		<members>HelloWorld__c</members>
-        <members>College__c</members>
-        <members>Employee__c</members>
-        <members>Pan_Card__c</members>
-        <members>StudentSubject__c</members>
-        <members>Student__c</members>
-        <members>Subject__c</members>
-        <members>Teacher__c</members>
-        <members>Year_Of_Class__c</members>
+		<members>College__c</members>
+		<members>Employee__c</members>
+		<members>Pan_Card__c</members>
+		<members>StudentSubject__c</members>
+		<members>Student__c</members>
+		<members>Subject__c</members>
+		<members>Teacher__c</members>
+		<members>Year_Of_Class__c</members>
 		<members>Book__c</members>
-        <name>CustomObject</name>
+		<members>Bank__c</members>
+		<name>CustomObject</name>
     </types>
     <types>
 		<members>Dream_World__c.Dream_World_Title__c</members>
@@ -99,36 +101,42 @@
     </types>
     <types>
 		<members>Dream_World__c</members>
-        <members>HelloWorld__c</members>
-        <members>College__c</members>
-        <members>Employee__c</members>
-        <members>Pan_Card__c</members>
-        <members>StudentSubject__c</members>
-        <members>Student__c</members>
-        <members>Subject__c</members>
-        <members>Teacher__c</members>
-        <members>Year_Of_Class__c</members>
+		<members>HelloWorld__c</members>
+		<members>College__c</members>
+		<members>Employee__c</members>
+		<members>Pan_Card__c</members>
+		<members>StudentSubject__c</members>
+		<members>Student__c</members>
+		<members>Subject__c</members>
+		<members>Teacher__c</members>
+		<members>Year_Of_Class__c</members>
 		<members>Book__c</members>
-        <name>CustomTab</name>
+		<members>Bank__c</members>
+		<name>CustomTab</name>
     </types>
     <types>
-        <members>Student__c-Registrar Layout</members>
-        <members>Student__c-Student Layout</members>
+		<members>Student__c-Registrar Layout</members>
+		<members>Student__c-Student Layout</members>
 		<members>Student__c-Teacher  Layout</members>
-        <name>Layout</name>
+		<members>Bank__c-Bank Layout</members>
+		<name>Layout</name>
     </types>
     <types>
-        <members>*</members>
-        <name>GlobalValueSet</name>
+		<members>*</members>
+		<name>GlobalValueSet</name>
     </types>
     <types>
-        <members>HelloWorldTrigger</members>
-        <name>ApexTrigger</name>
+		<members>HelloWorldTrigger</members>
+		<members>Bank_Trigger</members>
+		<members>TriggerAccount</members>
+		<members>Trigger_Account</members>
+		<members>Trigger_Account1</members>
+		<name>ApexTrigger</name>
     </types>
     <types>
-        <members>Student__c.Registrar</members>
-        <members>Student__c.Teacher</members>
-        <name>RecordType</name>
+		<members>Student__c.Registrar</members>
+		<members>Student__c.Teacher</members>
+		<name>RecordType</name>
     </types>
     <version>53.0</version>
 </Package>
