@@ -175,6 +175,30 @@
         <visibleLines>3</visibleLines>
     </fields>
     <fields>
+        <fullName>Total_Number_Of_District_By_Trigger__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Number Of District By Trigger</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Number_Of_State_By_Trigger__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Number Of State By Trigger</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Total_Number_of_Districts__c</fullName>
         <externalId>false</externalId>
         <label>Total Number of Districts</label>
@@ -201,6 +225,9 @@
     <label>Country</label>
     <listViews>
         <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Total_Number_Of_State_By_Trigger__c</columns>
+        <columns>Total_Number_Of_District_By_Trigger__c</columns>
         <filterScope>Everything</filterScope>
         <label>All</label>
     </listViews>
