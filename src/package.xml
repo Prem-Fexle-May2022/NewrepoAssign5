@@ -42,7 +42,9 @@
 		<members>ExceptionHandling</members>
 		<members>ExternalIdClass</members>
 		<members>BankTriggerHelper</members>
-        <name>ApexClass</name>
+        <members>CountryMapDynamicFill</members>
+		<members>RelationshipSoqlClass</members>
+		<name>ApexClass</name>
     </types>
     <types>
 		<members>Dream_World__c</members>
@@ -57,6 +59,9 @@
 		<members>Year_Of_Class__c</members>
 		<members>Book__c</members>
 		<members>Bank__c</members>
+		<members>Country__c</members>
+		<members>District__c</members>
+		<members>State__c</members>
 		<name>CustomObject</name>
     </types>
     <types>
@@ -97,6 +102,18 @@
 		<members>Student__c.X4th_Sem_Subject_in_which_back__c</members>
 		<members>Student__c.X4th_sem_Percentage__c</members>
 		<members>Account.MyExtID__c</members>
+		<members>Country__c.Country_Code__c</members>
+		<members>Country__c.JSON_Data_Format__c</members>
+		<members>Country__c.Total_Number_of_Districts__c</members>
+		<members>Country__c.Total_Number_of_States__c</members>
+		<members>District__c.District_Pin_Code__c</members>
+		<members>District__c.Identification__c</members>
+		<members>District__c.State__c</members>
+		<members>State__c.Country__c</members>
+		<members>State__c.Identification__c</members>
+		<members>State__c.State_Code__c</members>
+		<members>State__c.Total_Number_of_District__c</members>
+		<members>State__c.Total_Number_of_Districts__c</members>
 		<name>CustomField</name>
     </types>
     <types>
@@ -112,6 +129,9 @@
 		<members>Year_Of_Class__c</members>
 		<members>Book__c</members>
 		<members>Bank__c</members>
+		<members>Country__c</members>
+		<members>District__c</members>
+		<members>State__c</members>
 		<name>CustomTab</name>
     </types>
     <types>
@@ -119,6 +139,9 @@
 		<members>Student__c-Student Layout</members>
 		<members>Student__c-Teacher  Layout</members>
 		<members>Bank__c-Bank Layout</members>
+		<members>Country__c-Country Layout</members>
+		<members>District__c-District Layout</members>
+		<members>State__c-State Layout</members>
 		<name>Layout</name>
     </types>
     <types>
@@ -137,6 +160,10 @@
 		<members>Student__c.Registrar</members>
 		<members>Student__c.Teacher</members>
 		<name>RecordType</name>
+    </types>
+	<types>
+		<members>Country__c</members>
+		<name>SharingRules</name>
     </types>
     <version>53.0</version>
 </Package>
