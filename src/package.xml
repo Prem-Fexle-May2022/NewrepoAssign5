@@ -41,7 +41,8 @@
 		<members>DmlClass1</members>
 		<members>ExceptionHandling</members>
 		<members>ExternalIdClass</members>
-		<members>CountryMapDynamicFill</members>
+		<members>BankTriggerHelper</members>
+        <members>CountryMapDynamicFill</members>
 		<members>RelationshipSoqlClass</members>
 		<name>ApexClass</name>
     </types>
@@ -57,6 +58,7 @@
 		<members>Teacher__c</members>
 		<members>Year_Of_Class__c</members>
 		<members>Book__c</members>
+		<members>Bank__c</members>
 		<members>Country__c</members>
 		<members>District__c</members>
 		<members>State__c</members>
@@ -126,6 +128,7 @@
 		<members>Teacher__c</members>
 		<members>Year_Of_Class__c</members>
 		<members>Book__c</members>
+		<members>Bank__c</members>
 		<members>Country__c</members>
 		<members>District__c</members>
 		<members>State__c</members>
@@ -135,6 +138,7 @@
 		<members>Student__c-Registrar Layout</members>
 		<members>Student__c-Student Layout</members>
 		<members>Student__c-Teacher  Layout</members>
+		<members>Bank__c-Bank Layout</members>
 		<members>Country__c-Country Layout</members>
 		<members>District__c-District Layout</members>
 		<members>State__c-State Layout</members>
@@ -146,6 +150,10 @@
     </types>
     <types>
 		<members>HelloWorldTrigger</members>
+		<members>Bank_Trigger</members>
+		<members>TriggerAccount</members>
+		<members>Trigger_Account</members>
+		<members>Trigger_Account1</members>
 		<name>ApexTrigger</name>
     </types>
     <types>
