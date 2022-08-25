@@ -37,6 +37,9 @@ public  with sharing class CountryMapDynamicFill {
         }
 		System.debug('Map of Combination after querying data: => ' + mapOfCombinationCountryStateAndDistrict);   
     }
+    public  CountryMapDynamicFill(){
+        show_AllCountryData(); // method call json update
+    }
 
     /**
      * Created By    :    Prem Chand
@@ -164,7 +167,7 @@ public  with sharing class CountryMapDynamicFill {
      * Params        :    void
      * Return        :    Void
     **/
-    public void countryJSONGenerator(String countryName){
+    public static void countryJSONGenerator(String countryName){
       
         Country objCountry = new Country();          // Create Country Class Object
         objCountry.countryName = countryName;

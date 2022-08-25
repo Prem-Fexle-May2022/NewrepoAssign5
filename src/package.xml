@@ -44,6 +44,8 @@
 		<members>BankTriggerHelper</members>
         <members>CountryMapDynamicFill</members>
 		<members>RelationshipSoqlClass</members>
+		<members>DistrictTriggerHelper</members>
+		<members>StateTriggerHelper</members>
 		<name>ApexClass</name>
     </types>
     <types>
@@ -150,6 +152,8 @@
     </types>
     <types>
 		<members>HelloWorldTrigger</members>
+		<members>Trigger_Districts</members>
+		<members>Trigger_State</members>
 		<members>Bank_Trigger</members>
 		<members>TriggerAccount</members>
 		<members>Trigger_Account</members>
