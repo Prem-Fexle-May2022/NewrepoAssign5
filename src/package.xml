@@ -42,8 +42,10 @@
 		<members>ExceptionHandling</members>
 		<members>ExternalIdClass</members>
 		<members>BankTriggerHelper</members>
-        <members>CountryMapDynamicFill</members>
+		<members>CountryMapDynamicFill</members>
 		<members>RelationshipSoqlClass</members>
+		<members>AccountTriggerHelperClass</members>
+		<members>ContactTriggerHelper</members>
 		<name>ApexClass</name>
     </types>
     <types>
@@ -62,6 +64,7 @@
 		<members>Country__c</members>
 		<members>District__c</members>
 		<members>State__c</members>
+		<members>Property__c</members>
 		<name>CustomObject</name>
     </types>
     <types>
@@ -114,6 +117,8 @@
 		<members>State__c.State_Code__c</members>
 		<members>State__c.Total_Number_of_District__c</members>
 		<members>State__c.Total_Number_of_Districts__c</members>
+		<members>Account.Status__c</members>
+		<members>Contact.Status__c</members>
 		<name>CustomField</name>
     </types>
     <types>
@@ -132,6 +137,7 @@
 		<members>Country__c</members>
 		<members>District__c</members>
 		<members>State__c</members>
+		<members>Property__c</members>
 		<name>CustomTab</name>
     </types>
     <types>
@@ -154,6 +160,8 @@
 		<members>TriggerAccount</members>
 		<members>Trigger_Account</members>
 		<members>Trigger_Account1</members>
+		<members>Contact_Trigger</members>
+		<members>Trigger_Account2</members>
 		<name>ApexTrigger</name>
     </types>
     <types>
